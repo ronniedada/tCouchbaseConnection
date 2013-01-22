@@ -18,5 +18,6 @@ Fill out required information to connect to a Couchbase Server cluster :
 
 Use tCouchbaseOperation to interact with the database
 ------------------------------------------------------
-This component does nothing more than holding a connection to the database. Please use [tCouchbaseOperation](https://github.com/ijokarumawak/tCouchbaseOperation) to execute data manipulation commands like get, set or delete.
-This component has to be set up before any tCouchbaseOperation components. Use the "OnSubjobOK" trigger to ensure the execution order.
+This component does nothing more than holding a connection to the database. 
+To extract/input data, please refer to tCouchbaseInput and tCouchbaseOutput.
+This component has to be set up before any tCouchbaseInput/tCouchbaseOutput components. Use the "OnSubjobOK" trigger to ensure the execution order.
