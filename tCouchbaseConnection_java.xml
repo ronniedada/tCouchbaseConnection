@@ -14,10 +14,10 @@
   </DOCUMENTATION>  
   <CONNECTORS>
     <CONNECTOR CTYPE="FLOW" MAX_INPUT="0" MAX_OUTPUT="0" MIN_INPUT="0" MIN_OUTPUT="0"/> 
-	<CONNECTOR CTYPE="SUBJOB_OK" MAX_INPUT="1" />
-	<CONNECTOR CTYPE="SUBJOB_ERROR" MAX_INPUT="1" />
-	<CONNECTOR CTYPE="COMPONENT_OK" />
-	<CONNECTOR CTYPE="COMPONENT_ERROR" />
+    <CONNECTOR CTYPE="COMPONENT_OK" MAX_INPUT="1" MAX_OUTPUT="1" MIN_INPUT="0" MIN_OUTPUT="0"/>
+    <CONNECTOR CTYPE="COMPONENT_ERROR" MAX_INPUT="1" MAX_OUTPUT="1" MIN_INPUT="0" MIN_OUTPUT="0"/>
+    <CONNECTOR CTYPE="SUBJOB_OK" MAX_INPUT="1" MAX_OUTPUT="1" MIN_INPUT="0" MIN_OUTPUT="0"/>
+    <CONNECTOR CTYPE="SUBJOB_ERROR" MAX_INPUT="1" MAX_OUTPUT="1" MIN_INPUT="0" MIN_OUTPUT="0"/>
 	<CONNECTOR CTYPE="RUN_IF" />
   </CONNECTORS>  
   <PARAMETERS>
@@ -38,12 +38,12 @@
   <CODEGENERATION> 
     <IMPORTS> 
       <IMPORT MODULE="commons-codec-1.5.jar" NAME="commons-codec" REQUIRED="true"/>
-      <IMPORT MODULE="couchbase-client-1.1-dp.jar" NAME="couchbase-client" REQUIRED="true"/>
+      <IMPORT MODULE="couchbase-client-1.1.0.jar" NAME="couchbase-client" REQUIRED="true"/>
       <IMPORT MODULE="httpcore-4.1.1.jar" NAME="httpcore" REQUIRED="true"/>
       <IMPORT MODULE="httpcore-nio-4.1.1.jar" NAME="httpcore-nio" REQUIRED="true"/>
       <IMPORT MODULE="jettison-1.1.jar" NAME="jettison" REQUIRED="true"/>
-      <IMPORT MODULE="netty-3.2.0.Final.jar" NAME="netty" REQUIRED="true"/>
-      <IMPORT MODULE="spymemcached-2.8.1.jar" NAME="spymemcached" REQUIRED="true"/>
+      <IMPORT MODULE="netty-3.5.5.Final.jar" NAME="netty" REQUIRED="true"/>
+      <IMPORT MODULE="spymemcached-2.8.9.jar" NAME="spymemcached" REQUIRED="true"/>
       <IMPORT MODULE="stax-api-1.0.1.jar" NAME="stax-api" REQUIRED="true"/>
     </IMPORTS> 
   </CODEGENERATION>  
