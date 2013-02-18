@@ -16,8 +16,8 @@ Fill out required information to connect to a Couchbase Server cluster :
 - Username: Specify the SASL authentication username if needed.
 - Password: Specify the SASL authentication password if needed. 
 
-Use tCouchbaseOperation to interact with the database
+Interact with a couchbase cluster
 ------------------------------------------------------
 This component does nothing more than holding a connection to the database. 
-To extract/input data, please refer to tCouchbaseInput and tCouchbaseOutput.
-This component has to be set up before any tCouchbaseInput/tCouchbaseOutput components. Use the "OnSubjobOK" trigger to ensure the execution order.
+To extract/input data, please refer to tCouchbaseBulk, tCouchbaseInput and tCouchbaseOutput.
+This component has to be set up before any tCouchbaseBulk, tCouchbaseInput and tCouchbaseOutput components. Use the "OnSubjobOK" trigger to ensure the execution order.
